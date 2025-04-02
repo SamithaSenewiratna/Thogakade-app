@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="535.0" prefWidth="860.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashBoardController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9b7ebd" height="535.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="207.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9b7ebd" height="520.0" layoutX="8.0" layoutY="6.0" stroke="#d4bee4" strokeLineCap="ROUND" strokeType="OUTSIDE" strokeWidth="2.0" width="187.0" />
+      <JFXButton layoutX="24.0" layoutY="179.0" onAction="#btnCustomerFormOnAction" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #3B1E54; -fx-background-radius: 15;" text="Customers" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="23.0" layoutY="243.0" onAction="#btnItemOnAction" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #3B1E54; -fx-background-radius: 15;" text="Item Manage" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="23.0" layoutY="310.0" onAction="#btnOrderFormOnAction" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #3B1E54; -fx-background-radius: 15;" text="Place Orders " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane fx:id="loadFormContent" layoutX="205.0" prefHeight="535.0" prefWidth="655.0" style="-fx-background-color: white;" />
+      <JFXButton layoutX="24.0" layoutY="372.0" onAction="#btnAboutUsOnAction" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #3B1E54; -fx-background-radius: 15;" text="About Us" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="84.0" fitWidth="87.0" layoutX="25.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icons8-shop-100.png" />
+         </image>
+      </ImageView>
+      <Group layoutX="97.0" layoutY="21.0">
+         <children>
+            <Label layoutX="-5.0" layoutY="1.0" text="Thoga" textFill="#4c1176">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="19.0" layoutY="25.0" text="කඩේ" textFill="#fafafa">
+               <font>
+                  <Font name="IWwewalage " size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </Group>
+      <ImageView fitHeight="49.0" fitWidth="62.0" layoutX="116.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/cart.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

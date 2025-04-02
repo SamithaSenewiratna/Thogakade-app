@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="535.0" prefWidth="655.0" style="-fx-background-color: #EEEEEE;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.aboutUsFormController">
+   <children>
+      <Label layoutX="59.0" layoutY="46.0" text="About Us">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextArea editable="false" layoutX="53.0" layoutY="108.0" prefHeight="198.0" prefWidth="546.0" style="-fx-background-radius: 15; -fx-border-color: #D4BEE4; -fx-border-radius: 15; -fx-background-radius: 15; -fx-border-width: 3.5;" text="&#10;The JavaFX-based Thogakade app is designed to manage grocery store operations efficiently. It offers features for inventory management, customer handling, sales tracking, and reporting. With a user-friendly interface, the system allows staff to add, update, and remove products, process customer orders, and monitor stock levels. The application ensures smooth day-to-day operations through robust database integration and responsive design." wrapText="true">
+         <font>
+            <Font name="Gadugi" size="14.0" />
+         </font>
+      </TextArea>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="451.0" layoutY="341.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icons8-shop-money-100.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

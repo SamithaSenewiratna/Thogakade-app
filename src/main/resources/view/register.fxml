@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RegisterFromController">
+   <children>
+      <JFXTextField fx:id="txtUserName" layoutX="380.0" layoutY="98.0" prefHeight="26.0" prefWidth="166.0" promptText="User Name" />
+      <JFXTextField fx:id="txtEmail" layoutX="380.0" layoutY="141.0" prefHeight="26.0" prefWidth="166.0" promptText="Email" />
+      <JFXPasswordField fx:id="txtPassword" layoutX="380.0" layoutY="190.0" prefHeight="26.0" prefWidth="166.0" promptText="Password" />
+      <JFXPasswordField fx:id="txtCPassword" layoutX="380.0" layoutY="237.0" prefHeight="26.0" prefWidth="166.0" promptText="Conform Password" />
+      <JFXButton layoutX="376.0" layoutY="305.0" onAction="#btnRegisterOnAction" prefHeight="26.0" prefWidth="166.0" style="-fx-background-color: #9B7EBD;" text="Register" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d4bee4" height="371.0" layoutX="16.0" layoutY="13.0" stroke="#b11dbc" strokeLineCap="ROUND" strokeType="OUTSIDE" strokeWidth="2.0" width="302.0" />
+      <Label layoutX="82.0" layoutY="44.0" prefHeight="35.0" prefWidth="77.0" text="Thoga" textFill="#4c1176">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="43.0" fitWidth="47.0" layoutX="121.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/cart.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="161.0" layoutY="79.0" text="කඩේ" textFill="#fafafa">
+         <font>
+            <Font name="Ebrima Bold" size="21.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="173.0" fitWidth="153.0" layoutX="87.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/thogakadelogin%20.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="126.0" layoutY="353.0" text="info@icet.lk" textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
