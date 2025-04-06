@@ -84,17 +84,35 @@ public class CustomerFormController implements Initializable {
     @FXML
     void btnDeleteOnAction(ActionEvent event) {
 
+        CustomerService customerService = ServiceFactory.getInstance().getServiceType(ServiceType.CUSTOMER);
+        if (customerService.deleteCustomer(txtId.getText())){
+            new Alert(Alert.AlertType.INFORMATION,"Customer Deleted!!").show();
+            loadTable();
+        }else {
+            new Alert(Alert.AlertType.ERROR,"Customer Not Deleted : (").show();
+        }
     }
 
     @FXML
     void btnReloadOnAction(ActionEvent event) {
+        txtId.clear();
+        txtName.clear();
+        txtAddress.clear();
+        txtSalary.clear();
+        loadTable();
 
     }
 
     @FXML
     void btnSearchOnAction(ActionEvent event) {
         Customer customer = service.searchCustomer(txtId.getText());
-        System.out.println(customer);
+        if (customer != null) {
+            txtName.setText(customer.getName());
+            txtAddress.setText(customer.getAddress());
+            txtSalary.setText(String.valueOf(customer.getSalary()));
+        } else {
+            new Alert(Alert.AlertType.ERROR, "Customer Not Found").show();
+        }
 
     }
 

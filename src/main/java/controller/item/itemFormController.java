@@ -19,11 +19,6 @@ import java.util.List;
 import java.util.ResourceBundle;
 
 
-
-
-
-
-
 public class itemFormController implements Initializable {
 
    ItemService service   = ServiceFactory.getInstance().getServiceType(ServiceType.ITEM);
